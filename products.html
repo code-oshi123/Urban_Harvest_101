@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Harvest | Products & Services</title>
+</head>
+
+<body class="bg-[var(--color-bg)] text-[var(--color-text)]">
+
+  <header class="bg-[var(--color-bg)]] text-[var(--color-text)] shadow-lg">
+    <nav class="nav-container" aria-label="Primary Navigation">
+
+      <!-- ================= LOGO SECTION ================= -->
+      <!-- Flex used to align logo image and text horizontally -->
+      <div class="flex items-center gap-3">
+
+        <!-- LOGO IMAGE -->
+        <img src="../public/sub_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
+
+        <!-- LOGO TEXT (Brand Name) -->
+        <span class="text-2xl font-bold text-[var(--color-text)]">
+          Urban Harvest
+        </span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-6 font-medium ">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="flex items-center space-x-3">
+
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+          <span id="theme-icon">🌙</span>
+        </button>
+
+
+        <!-- signin btn -->
+        <button class="px-4 py-2 rounded bg-[var(--color-btn)] text-[var(--color-text)] hover:opacity-60 focus:ring-2">
+          <a href="./subscribe.html">Sign UP</a>
+        </button>
+
+        <!-- Hamburger Menu -->
+        <button id="menu-btn" class="icon-btn md:hidden" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-bg)]">
+      <ul class="flex flex-col text-center py-4 space-y-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main class="max-w-7xl mx-auto px-4 py-12">
+
+    <!-- HERO -->
+    <section class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Eco-Friendly Products & Services</h1>
+      <p class="text-lg max-w-2xl mx-auto">
+        Sustainable solutions designed to support urban farming and greener living.
+      </p>
+    </section>
+
+    <!-- PRODUCT FILTER TABS -->
+    <section aria-labelledby="product-tabs" class="mb-10">
+      <h2 id="product-tabs" class="sr-only">Product Categories</h2>
+
+      <div role="tablist" class="flex justify-center gap-4 mb-8">
+        <button role="tab" aria-selected="true" class="tab-btn">Seeds</button>
+        <button role="tab" aria-selected="false" class="tab-btn">Tools</button>
+        <button role="tab" aria-selected="false" class="tab-btn">Smart Systems</button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div id="product-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- PRODUCT CARD -->
+        <article class="product-card" data-category="Seeds">
+          <img src="/public/p_7.jpg" alt="Organic seed pack" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Eco</span>
+            <h3 class="text-xl font-semibold mt-3">Organic Seed Pack</h3>
+            <p class="mt-2 text-sm">Chemical-free seeds for home gardens.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Seeds">
+          <img src="/public/p_8.jpg" alt="Organic seed pack" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Eco</span>
+            <h3 class="text-xl font-semibold mt-3">Organic Seed Pack</h3>
+            <p class="mt-2 text-sm">Chemical-free seeds for home gardens.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Seeds">
+          <img src="/public/p_9.jpg" alt="Organic seed pack" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Eco</span>
+            <h3 class="text-xl font-semibold mt-3">Organic Seed Pack</h3>
+            <p class="mt-2 text-sm">Chemical-free seeds for home gardens.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Seeds">
+          <img src="/public/p_10.jpg" alt="Organic seed pack" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Eco</span>
+            <h3 class="text-xl font-semibold mt-3">Organic Seed Pack</h3>
+            <p class="mt-2 text-sm">Chemical-free seeds for home gardens.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+        <!-- sustanable -->
+        <article class="product-card" data-category="Tools">
+          <img src="/public/p_16.jpg" alt="Gardening tools" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Sustainable</span>
+            <h3 class="text-xl font-semibold mt-3">Eco Gardening Tools</h3>
+            <p class="mt-2 text-sm">Durable tools made from recycled materials.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Tools">
+          <img src="/public/p_17.jpg" alt="Gardening tools" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Sustainable</span>
+            <h3 class="text-xl font-semibold mt-3">Eco Gardening Tools</h3>
+            <p class="mt-2 text-sm">Durable tools made from recycled materials.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Tools">
+          <img src="/public/p_21.jpg" alt="Gardening tools" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Sustainable</span>
+            <h3 class="text-xl font-semibold mt-3">Eco Gardening Tools</h3>
+            <p class="mt-2 text-sm">Durable tools made from recycled materials.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <!-- smart -->
+
+        <article class="product-card" data-category="Smart Systems">
+          <img src="/public/p_13.jpg" alt="Smart irrigation system" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Smart</span>
+            <h3 class="text-xl font-semibold mt-3">Smart Irrigation Kit</h3>
+            <p class="mt-2 text-sm">Automated watering for water efficiency.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Smart Systems">
+          <img src="/public/p_19.jpg" alt="Smart irrigation system" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Smart</span>
+            <h3 class="text-xl font-semibold mt-3">Smart Irrigation Kit</h3>
+            <p class="mt-2 text-sm">Automated watering for water efficiency.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="Smart Systems">
+          <img src="/public/p_20.jpg" alt="Smart irrigation system" loading="lazy" class="w-full h-48 object-cover rounded-t-xl">
+          <div class="p-5">
+            <span class="eco-badge">Smart</span>
+            <h3 class="text-xl font-semibold mt-3">Smart Irrigation Kit</h3>
+            <p class="mt-2 text-sm">Automated watering for water efficiency.</p>
+            <button class="btn-primary mt-4 open-modal">View Details</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SERVICES (ACCORDION) -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+
+      <div class="space-y-4">
+        <details class="rounded-xl bg-[var(--color-bg)]  p-5">
+          <summary class="font-semibold cursor-pointer">Urban Garden Setup</summary>
+          <p class="mt-3 text-sm">Design and installation of small-scale urban gardens.</p>
+        </details>
+
+        <details class="rounded-xl bg-[var(--color-bg)]  p-5">
+          <summary class="font-semibold cursor-pointer">Sustainability Consultation</summary>
+          <p class="mt-3 text-sm">Expert guidance on eco-friendly practices.</p>
+        </details>
+
+        <details class="rounded-xl bg-[var(--color-bg)]  p-5">
+          <summary class="font-semibold cursor-pointer">Smart Irrigation Solutions</summary>
+          <p class="mt-3 text-sm">Automated watering systems that optimize water usage and ensure healthy plant growth.
+          </p>
+        </details>
+
+        <details class="rounded-xl bg-[var(--color-bg)]  p-5">
+          <summary class="font-semibold cursor-pointer">Organic Farming Workshops</summary>
+          <p class="mt-3 text-sm">Hands-on training sessions covering organic growing techniques for beginners and
+            enthusiasts.</p>
+        </details>
+
+        <details class="rounded-xl bg-[var(--color-bg)]  p-5">
+          <summary class="font-semibold cursor-pointer">Garden Maintenance & Support</summary>
+          <p class="mt-3 text-sm">Ongoing care, monitoring, and expert support to keep your urban garden thriving
+            year-round.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- SUBSCRIPTION FORM -->
+    <section aria-labelledby="subscribe" class="max-w-xl mx-auto">
+      <h2 id="subscribe" class="text-3xl font-bold mb-6 text-center">Eco Updates Subscription</h2>
+
+      <form id="subscribe-form" novalidate class="space-y-4">
+        <div>
+          <label class="block mb-1">Name</label>
+          <input type="text" id="name" class="form-input" required />
+        </div>
+
+        <div>
+          <label class="block mb-1">Email</label>
+          <input type="email" id="email" class="form-input" required />
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Subscribe</button>
+        <p id="form-message" aria-live="polite" class="text-center text-sm mt-3"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center" role="dialog" aria-modal="true">
+    <div class="bg-[var(--color-bg)]  rounded-xl p-6 max-w-md w-full">
+      <h3 class="text-xl font-bold mb-3">Product Details</h3>
+      <p class="text-sm mb-4">This product supports sustainable urban farming.</p>
+      <button id="close-modal" class="btn-primary">Close</button>
+    </div>
+  </div>
+</body>
+
+<!-- ================= FOOTER SECTION ================= -->
+<footer class="bg-[var(--color-bg)] text-[var(--color-text)] mt-16 shadow-lg">
+
+  <!-- MAIN FOOTER GRID -->
+  <div class="max-w-7xl mx-auto px-6 py-5
+           grid gap-5
+           grid-cols-1
+           md:grid-cols-2
+           lg:grid-cols-4
+           text-center md:text-left">
+
+    <!-- BRAND -->
+    <div class="flex flex-col items-center md:items-start">
+      <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-12 mb-3">
+      <h2 class="text-xl font-bold mb-3">Urban Harvest</h2>
+      <p class="text-sm leading-relaxed max-w-xs">
+        Promoting sustainable urban living through eco-friendly products,
+        responsible sourcing, and community-driven initiatives.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h3 class="font-semibold mb-4">Quick Links</h3>
+      <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+        <li><a href="#" class="hover:text-[var(--color-accent)]">Home</a></li>
+        <li><a href="#" class="hover:text-[var(--color-accent)]">Products</a></li>
+        <li><a href="#" class="hover:text-[var(--color-accent)]">Community</a></li>
+        <li><a href="#" class="hover:text-[var(--color-accent)]">About</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div>
+      <h3 class="font-semibold mb-4">Contact</h3>
+      <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+        <li>hello@urbanharvest.com</li>
+        <li>+94 76 512 12695</li>
+        <li>Sri Lanka</li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div>
+      <h3 class="font-semibold mb-4">Follow Us</h3>
+      <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+        <a href="#" class="hover:text-[var(--color-accent)]">Facebook</a>
+        <a href="#" class="hover:text-[var(--color-accent)]">Instagram</a>
+        <a href="#" class="hover:text-[var(--color-accent)]">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="border-t border-[var(--color-btn)] text-center py-4 text-sm">
+    © 2026 Urban Harvest. All rights reserved.
+  </div>
+</footer>
+
+<script type="module" src="/src/main.js" defer></script>
+<script src="/src/js/products.js"></script>
+<script src="/src/js/modal.js"></script>
+<script src="/src/js/form-validation.js"></script>
+
+</html>

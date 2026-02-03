@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===============================
+   CSS VARIABLES (Light / Dark)
+================================ */
+:root {
+  --color-bg: #fdfcf8;
+  --color-text: #1f2937;
+  --color-nav: #ffffff;
+  --color-btn: #16a34a;
+  --color-accent: #22c55e;
+}
+
+.dark {
+  --color-bg: #0f172a;
+  --color-text: rgb(255, 253, 253);
+  --color-nav: #0f172a;
+  --color-btn: #16da58;
+  --color-accent: #4ade80;
+} 
+
+/* ===============================
+   BASE STYLES
+================================ */
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+}
+
+
+/* ===============================
+   CUSTOM COMPONENTS (@layer)
+================================ */
+@layer components {
+
+  .nav-link {
+    @apply hover:text-[var(--color-accent)]
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)]
+           transition;
+  }
+
+  /* ===== Navigation (YOUR EXISTING) ===== */
+  .nav-container {
+    @apply max-w-7xl mx-auto px-4 py-4 flex items-center justify-between;
+  }
+
+  .nav-link {
+    @apply hover:text-[var(--color-btn)]
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)]
+           transition;
+  }
+
+  .icon-btn {
+    @apply p-2 rounded
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)];
+  }
+
+  /* ===== Buttons ===== */
+  .btn-primary {
+    @apply bg-[var(--color-btn)]
+           text-white
+           px-5 py-2
+           rounded-lg
+           transition
+           hover:opacity-90
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)];
+  }
+
+  /* ===== Product Components ===== */
+  .product-card {
+    @apply bg-[var(--color-bg)]
+           dark:bg-zinc-900
+           rounded-xl
+           shadow
+           overflow-hidden
+           transition
+           hover:shadow-lg
+           hover:scale-[1.02];
+  }
+
+  .eco-badge {
+    @apply inline-block
+           text-xs
+           px-2 py-1
+           rounded-full
+           bg-[var(--color-btn)]
+           text-white;
+  }
+
+  /* ===== Tabs ===== */
+  .tab-btn {
+    @apply px-4 py-2
+           rounded-lg
+           border
+           border-[var(--color-btn)]
+           transition
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)]
+           aria-selected:bg-[var(--color-btn)]
+           aria-selected:text-white;
+  }
+
+  /* ===== Forms ===== */
+  .form-input {
+    @apply w-full
+           p-2
+           rounded-md
+           border
+           border-gray-300
+           dark:border-zinc-700
+           bg-white
+           dark:bg-zinc-900
+           focus:outline-none
+           focus:ring-2
+           focus:ring-[var(--color-accent)];
+  }
+
+  .form-error {
+    @apply text-sm text-red-600 mt-1;
+  }
+
+  .form-success {
+    @apply text-sm text-green-600 mt-1;
+  }
+
+  /* ===== Cards / Sections ===== */
+  .content-card {
+    @apply bg-[var(--color-bg)]
+           dark:bg-zinc-900
+           rounded-xl
+           p-6
+           shadow;
+  }
+}
