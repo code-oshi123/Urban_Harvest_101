@@ -139,7 +139,6 @@
   /* ===== Cards / Sections ===== */
   .content-card {
     @apply bg-[var(--color-bg)]
-           dark:bg-zinc-900
            rounded-xl
            p-6
            shadow;

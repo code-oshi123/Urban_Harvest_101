@@ -5,341 +5,533 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Harvest-Home</title>
+  <title>Urban Harvest - About Us</title>
 </head>
 
 <body class="bg-[var(--color-bg)] text-[var(--color-text)]">
   <div id="app"></div>
 
-  <header class="bg-[var(--color-bg)]] text-[var(--color-text)] shadow-lg">
+  <header class="bg-[var(--color-nav)] text-[var(--color-text)] shadow-lg">
     <nav class="nav-container" aria-label="Primary Navigation">
-
-      <!-- ================= LOGO SECTION ================= -->
-      <!-- Flex used to align logo image and text horizontally -->
       <div class="flex items-center gap-3">
-
-        <!-- LOGO IMAGE -->
         <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
-
-        <!-- LOGO TEXT (Brand Name) -->
-        <span class="text-2xl font-bold text-[var(--color-text)]">
-          Urban Harvest
-        </span>
+        <span class="text-2xl font-bold text-[var(--color-text)]">Urban Harvest</span>
       </div>
 
-      <!-- Desktop Navigation -->
-      <ul class="hidden md:flex space-x-6 font-medium ">
+      <ul class="hidden md:flex space-x-6 font-medium">
         <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/about" class="nav-link font-bold text-[var(--color-accent)]">About</a></li>
         <li><a href="/products" class="nav-link">Products</a></li>
         <li><a href="/community" class="nav-link">Community</a></li>
-
       </ul>
 
-      <!-- Actions -->
       <div class="flex items-center space-x-3">
-
-        <!-- Dark Mode Toggle -->
         <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
           <span id="theme-icon">🌙</span>
         </button>
 
-
-        <!-- signup btn -->
-        <button class="px-4 py-2 rounded bg-[var(--color-btn)] text-[var(--color-text)] hover:opacity-60 focus:ring-2">
+        <button class="px-4 py-2 rounded bg-[var(--color-btn)] text-white hover:opacity-60 focus:ring-2">
           <a href="/subscribe">Sign UP</a>
         </button>
 
-        <!-- Hamburger Menu -->
         <button id="menu-btn" class="icon-btn md:hidden" aria-label="Toggle navigation menu" aria-expanded="false">
           ☰
         </button>
-
       </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-bg)]">
       <ul class="flex flex-col text-center py-4 space-y-4">
         <li><a href="/" class="nav-link">Home</a></li>
         <li><a href="/about" class="nav-link">About</a></li>
         <li><a href="/products" class="nav-link">Products</a></li>
         <li><a href="/community" class="nav-link">Community</a></li>
-
       </ul>
     </div>
   </header>
 
   <main class="pt-20">
-    <!-- Hero -->
-    <section class="relative py-20 bg-cover bg-center text-[var(--color-text)]"
-      style="background-image: url('/public/p_18.jpg');">
-      <!-- Overlay -->
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-cover bg-center text-white" style="background-image: url('/public/p_18.jpg');">
       <div class="absolute inset-0 bg-black/50"></div>
-
-      <!-- Content -->
+      
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span
-          class="inline-block px-4 py-2 bg-primary-100 dark:bg-primary-900 text-white rounded-full text-4xl font-semibold mb-4">
-           Our Story
+        <span class="inline-block px-6 py-3 bg-[var(--color-btn)] text-white rounded-full text-lg font-semibold mb-6 shadow-lg">
+          🌱 Our Story
         </span>
 
-        <h1 class="text-5xl font-bold mb-6 text-white">
-          About <span class="text-gradient">Urban Harvest</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          About <span class="text-[var(--color-accent)]">Urban Harvest</span>
         </h1>
 
-        <p class="text-xl text-white max-w-3xl mx-auto">
-          We're on a mission to make sustainable living accessible to everyone through fresh, organic produce and
-          eco-friendly practices.
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+          Making sustainable living accessible to everyone through fresh, organic produce and eco-friendly practices.
         </p>
       </div>
     </section>
 
-
-    <!-- Mission -->
-    <section class="py-20">
+    <!-- Mission Section -->
+    <section class="py-16 md:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-4xl font-bold mb-6">Our Mission</h2>
-            <p class="text-lg text-[var(--color-text)] mb-4">
-              Urban Harvest was founded in 2020 with a simple yet powerful vision: to create a sustainable food system
-              that benefits both people and the planet.
+          <div class="space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-text)]">Our Mission</h2>
+            
+            <p class="text-lg leading-relaxed">
+              Urban Harvest was founded in 2020 with a simple yet powerful vision: to create a sustainable food system that benefits both people and the planet.
             </p>
-            <p class="text-lg text-[var(--color-text)] mb-4">
-              We partner with over 200 local farms to deliver fresh, organic produce while reducing carbon emissions and
-              supporting local economies.
+            
+            <p class="text-lg leading-relaxed">
+              We partner with over <span class="font-bold text-[var(--color-btn)]">200 local farms</span> to deliver fresh, organic produce while reducing carbon emissions and supporting local economies.
             </p>
-            <p class="text-lg text-[var(--color-text)]">
+            
+            <p class="text-lg leading-relaxed">
               Every box we deliver represents our commitment to transparency, quality, and environmental responsibility.
             </p>
+
+            <div class="pt-4">
+              <a href="/subscribe" class="btn-primary inline-flex items-center gap-2">
+                Join Our Mission
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <!-- <div class="relative rounded-lg overflow-hidden shadow-lg">
-            <video class="w-full h-80 object-cover" controls preload="metadata" poster="/images/video-poster.jpg">
+          <div class="aspect-video rounded-lg overflow-hidden shadow-2xl">
+            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
               <source src="/public/v_2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+              Your browser does not support video playback.
             </video>
-          </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Video -->
-  <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
-    <video
-      class="w-full h-full object-cover"
-      autoplay
-      loop
-      muted
-      playsinline
-      aria-hidden="true"
-    >
-      <source src="/public/v_2.mp4" type="video/mp4" />
-    </video>
+    <!-- Impact Statistics  -->
+
+<section class="py-16 md:py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Our Impact in Numbers
+      </h2>
+      <p class="text-xl text-[var(--color-text)]">
+        Measuring our commitment to sustainability
+      </p>
+    </div>
+
+    <!-- Main Stats -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <div class="content-card text-center transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--color-accent)]">
+        <div class="text-5xl mb-4">🌱</div>
+        <div class="text-4xl md:text-5xl font-bold text-[var(--color-btn)] mb-2" id="stat-co2">0</div>
+        <div class="text-sm md:text-base font-semibold text-[var(--color-text)]">
+          kg CO₂ Saved
+        </div>
+        <div class="mt-3 text-xs text-[var(--color-text)]">
+          Equivalent to planting 2,500 trees
+        </div>
+      </div>
+
+      <div class="content-card text-center transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--color-accent)]">
+        <div class="text-5xl mb-4">👥</div>
+        <div class="text-4xl md:text-5xl font-bold text-[var(--color-btn)] mb-2" id="stat-members">0</div>
+        <div class="text-sm md:text-base font-semibold text-[var(--color-text)]">
+          Active Members
+        </div>
+        <div class="mt-3 text-xs text-[var(--color-text)]">
+          Growing 15% monthly
+        </div>
+      </div>
+
+      <div class="content-card text-center transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--color-accent)]">
+        <div class="text-5xl mb-4">🚜</div>
+        <div class="text-4xl md:text-5xl font-bold text-[var(--color-btn)] mb-2" id="stat-farms">0</div>
+        <div class="text-sm md:text-base font-semibold text-[var(--color-text)]">
+          Partner Farms
+        </div>
+        <div class="mt-3 text-xs text-[var(--color-text)]">
+          Within 50-mile radius
+        </div>
+      </div>
+
+      <div class="content-card text-center transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-[var(--color-accent)]">
+        <div class="text-5xl mb-4">♻️</div>
+        <div class="text-4xl md:text-5xl font-bold text-[var(--color-btn)] mb-2" id="stat-waste">0</div>
+        <div class="text-sm md:text-base font-semibold text-[var(--color-text)]">
+          Zero Waste Achievement
+        </div>
+        <div class="mt-3 text-xs text-[var(--color-text)]">
+          100% recyclable packaging
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional Metrics -->
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="content-card text-center">
+        <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">2.5M+</div>
+        <p class="text-sm text-[var(--color-text)]">Meals Delivered</p>
+      </div>
+
+      <div class="content-card text-center">
+        <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">100%</div>
+        <p class="text-sm text-[var(--color-text)]">Organic Certified</p>
+      </div>
+
+      <div class="content-card text-center">
+        <div class="text-3xl font-bold text-[var(--color-accent)] mb-2">24hrs</div>
+        <p class="text-sm text-[var(--color-text)]">Farm to Door</p>
+      </div>
+    </div>
+
   </div>
-        </div>
-      </div>
-    </section>
+</section>
 
-    <!-- Impact Stats -->
-    <section class="py-20 bg-[var(--color-bg)]] text-[var(--color-text)]">
+
+    <!-- Sourcing Section - New -->
+    <section class="py-16 md:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Our Impact</h2>
-          <p class="text-xl text-[var(--color-text)]">Measuring our commitment to sustainability</p>
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">How We Source</h2>
+          <p class="text-xl bg-[var(--color-bg)] text-[var(--color-text)]">From local farms to your table</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="card text-center hover:scale-105 transition-all">
-            <!-- <div class="text-5xl mb-4">🌱</div> -->
-            <div class="text-4xl font-bold text-[var(--color-text)] mb-2">50,000+</div>
-            <div class="text-[var(--color-text)]">kg CO₂ Saved</div>
+        <!-- Sourcing Process Timeline -->
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-4 bg-[var(--color-btn)] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+              1
+            </div>
+            <h3 class="text-xl font-bold mb-3">Farm Selection</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              We partner only with certified organic farms within a 50-mile radius
+            </p>
           </div>
 
-          <div class="card text-center hover:scale-105 transition-all">
-            <!-- <div class="text-5xl mb-4">👥</div> -->
-            <div class="text-4xl font-bold text-primary-600 mb-2">12,000</div>
-            <div class="text-[var(--color-text)]">Active Members</div>
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-4 bg-[var(--color-btn)] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+              2
+            </div>
+            <h3 class="text-xl font-bold mb-3">Quality Check</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Every harvest is inspected for freshness and organic compliance
+            </p>
           </div>
 
-          <div class="card text-center hover:scale-105 transition-all">
-            <!-- <div class="text-5xl mb-4">🚜</div> -->
-            <div class="text-4xl font-bold text-primary-600 mb-2">200+</div>
-            <div class="text-[var(--color-text)]">Partner Farms</div>
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-4 bg-[var(--color-btn)] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+              3
+            </div>
+            <h3 class="text-xl font-bold mb-3">Eco Packaging</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Packed in 100% compostable materials at our green facility
+            </p>
           </div>
 
-          <div class="card text-center hover:scale-105 transition-all">
-            <!-- <div class="text-5xl mb-4">♻️</div> -->
-            <div class="text-4xl font-bold text-primary-600 mb-2">95%</div>
-            <div class="text-[var(--color-text)]">Zero Waste</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Practices -->
-    <section class="py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Our Eco-Friendly Practices</h2>
-          <p class="text-xl text-[var(--color-text)]">How we make a difference every day</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">🚗</div> -->
+          <div class="text-center">
+            <div class="w-20 h-20 mx-auto mb-4 bg-[var(--color-btn)] text-white rounded-full flex items-center justify-center text-3xl font-bold shadow-lg">
+              4
+            </div>
             <h3 class="text-xl font-bold mb-3">Carbon-Neutral Delivery</h3>
-            <p class="text-[var(--color-text)]">
-              All deliveries use electric vehicles and optimized routes to minimize our carbon footprint.
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Electric vehicle fleet delivers fresh to your doorstep
             </p>
           </div>
+        </div>
 
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">📦</div> -->
-            <h3 class="text-xl font-bold mb-3">Reusable Packaging</h3>
-            <p class="text-[var(--color-text)]">
-              100% compostable or reusable packaging. Return boxes for credits on your next order.
-            </p>
-          </div>
+        <!-- Sourcing Map Visual -->
+        <div class="mt-16 content-card bg-[var(--color-bg)] text-[var(--color-text)]">
+          <h3 class="text-2xl font-bold text-center mb-8">Our Local Network</h3>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                  🌾
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">Certified Organic Farms</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">200+ partner farms with USDA organic certification</p>
+                </div>
+              </div>
 
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">💧</div> -->
-            <h3 class="text-xl font-bold mb-3">Water Conservation</h3>
-            <p class="text-[var(--color-text)]">
-              Our partner farms use drip irrigation and water-saving techniques to reduce waste.
-            </p>
-          </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                  📍
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">50-Mile Radius</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">All produce sourced locally to reduce emissions</p>
+                </div>
+              </div>
 
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">🌿</div> -->
-            <h3 class="text-xl font-bold mb-3">Organic Certification</h3>
-            <p class="text-[var(--color-text)]">
-              All products are certified organic, free from harmful pesticides and chemicals.
-            </p>
-          </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                  🤝
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">Fair Trade Pricing</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">Farmers receive 30% above market rate</p>
+                </div>
+              </div>
 
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">🤝</div> -->
-            <h3 class="text-xl font-bold mb-3">Fair Trade Practices</h3>
-            <p class="text-[var(--color-text)]">
-              We ensure farmers receive fair compensation for their sustainable practices.
-            </p>
-          </div>
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center text-2xl flex-shrink-0">
+                  ⏱️
+                </div>
+                <div>
+                  <h4 class="font-bold mb-1">24-Hour Freshness</h4>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">From harvest to your door in under 24 hours</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="card text-center">
-            <!-- <div class="text-6xl mb-4">📍</div> -->
-            <h3 class="text-xl font-bold mb-3">Local Sourcing</h3>
-            <p class="text-[var(--color-text)]">
-              All produce comes from farms within a 50-mile radius, supporting local economies.
-            </p>
+            <div class="bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 text-center">
+              <div class="text-6xl mb-4">🗺️</div>
+              <h4 class="text-xl font-bold mb-2">Serving 15 Counties</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                Expanding our sustainable network across the region
+              </p>
+              <div class="inline-block px-4 py-2 bg-[var(--color-btn)] text-white rounded-full text-sm font-semibold">
+                Check Your Area
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section class="py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p class="text-xl text-[var(--color-text)]">Everything you need to know</p>
-          </div>
+    <!-- Eco-Friendly Practices -->
+<!-- Eco-Friendly Practices -->
+<section class="py-16 md:py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div class="accordion">
-            <div class="accordion-item card mb-4">
-              <button class="accordion-header">
-                <span class="text-lg font-semibold">How does the subscription work?</span>
-                <svg class="w-6 h-6 accordion-icon transition-transform text-primary-600" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  Choose your plan, select your preferences, and we'll deliver fresh organic produce to your door every
-                  week. You can pause, modify, or cancel your subscription anytime with no penalties.
-                </div>
-              </div>
-            </div>
+    <!-- Section Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Our Eco-Friendly Practices
+      </h2>
+      <p class="text-xl text-[var(--color-text-muted)]">
+        Making a difference every day
+      </p>
+    </div>
 
-            <div class="accordion-item card mb-4">
-              <button class="accordion-header">
-                <span class="text-lg font-semibold">Where do you source your produce?</span>
-                <svg class="w-6 h-6 accordion-icon transition-transform text-primary-600" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  All our produce comes from certified organic farms within a 50-mile radius of our distribution center.
-                  We partner with over 200 local farms to ensure the freshest, highest-quality products.
-                </div>
-              </div>
-            </div>
+    <!-- Cards Grid -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-            <div class="accordion-item card mb-4">
-              <button class="accordion-header">
-                <span class="text-lg font-semibold">Is your packaging really eco-friendly?</span>
-                <svg class="w-6 h-6 accordion-icon transition-transform text-primary-600" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  Yes! All our packaging is either 100% compostable or reusable. Our boxes are made from recycled
-                  materials, and we offer a return program where you can send back containers for credits on your next
-                  order.
-                </div>
-              </div>
-            </div>
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">🚗</div>
+        <h3 class="text-xl font-bold mb-3">Carbon-Neutral Delivery</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Electric vehicles and optimized routes minimize our carbon footprint.
+        </p>
+      </div>
 
-            <div class="accordion-item card mb-4">
-              <button class="accordion-header">
-                <span class="text-lg font-semibold">Can I customize my box?</span>
-                <svg class="w-6 h-6 accordion-icon transition-transform text-primary-600" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  Absolutely! You can specify dietary preferences, exclude items you don't like, and add extras to your
-                  weekly delivery. Family and Premium members get full customization options.
-                </div>
-              </div>
-            </div>
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">📦</div>
+        <h3 class="text-xl font-bold mb-3">Reusable Packaging</h3>
+        <p class="text-[var(--color-text-muted)]">
+          100% compostable materials. Return boxes for credits.
+        </p>
+      </div>
 
-            <div class="accordion-item card">
-              <button class="accordion-header">
-                <span class="text-lg font-semibold">What is your delivery area?</span>
-                <svg class="w-6 h-6 accordion-icon transition-transform text-primary-600" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  We currently deliver to all major metropolitan areas and surrounding suburbs. Enter your zip code
-                  during signup to confirm delivery availability in your area. We're constantly expanding!
-                </div>
-              </div>
-            </div>
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">💧</div>
+        <h3 class="text-xl font-bold mb-3">Water Conservation</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Partner farms use drip irrigation and water-saving techniques.
+        </p>
+      </div>
+
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">🌿</div>
+        <h3 class="text-xl font-bold mb-3">Organic Certification</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Certified organic, pesticide-free produce only.
+        </p>
+      </div>
+
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">🤝</div>
+        <h3 class="text-xl font-bold mb-3">Fair Trade</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Fair compensation ensures sustainable farming practices.
+        </p>
+      </div>
+
+      <div class="content-card hover:shadow-xl transition-shadow">
+        <div class="text-5xl mb-4">📍</div>
+        <h3 class="text-xl font-bold mb-3">Local Sourcing</h3>
+        <p>
+          Supporting local economies within a 50-mile radius.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- FAQ Section -->
+<section class="py-16 md:py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-xl text-[var(--color-text-muted)]">
+        Everything you need to know
+      </p>
+    </div>
+
+    <!-- Accordion -->
+    <div class="space-y-4" id="faq-accordion">
+
+      <!-- Item 1-->
+      <div class="content-card rounded-lg bg-[var(--color-surface)]">
+        <button
+          class="accordion-header w-full flex items-center justify-between text-left p-4 rounded-lg transition hover:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-[var(--color-btn)]"
+        >
+          <span class="text-lg font-semibold">
+            How does the subscription work?
+          </span>
+
+          <svg class="w-6 h-6 accordion-icon transition-transform text-[var(--color-btn)]"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="p-4 pt-0 text-[var(--color-text-muted)]">
+            Choose your plan, select preferences, and get fresh organic produce weekly.
           </div>
         </div>
-    </section>
+      </div>
+
+            <!-- Item 2-->
+      <div class="content-card rounded-lg bg-[var(--color-surface)]">
+        <button
+          class="accordion-header w-full flex items-center justify-between text-left p-4 rounded-lg transition hover:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-[var(--color-btn)]"
+        >
+          <span class="text-lg font-semibold">
+            Where do you source your produce?
+          </span>
+
+          <svg class="w-6 h-6 accordion-icon transition-transform text-[var(--color-btn)]"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="p-4 pt-0 text-[var(--color-text-muted)]">
+            All our produce comes from certified organic farms within a 50-mile radius of our distribution center.
+                  We partner with over 200 local farms to ensure the freshest, highest-quality products.
+          </div>
+        </div>
+      </div>
+
+            <!-- Item 3-->
+      <div class="content-card rounded-lg bg-[var(--color-surface)]">
+        <button
+          class="accordion-header w-full flex items-center justify-between text-left p-4 rounded-lg transition hover:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-[var(--color-btn)]"
+        >
+          <span class="text-lg font-semibold">
+            Is your packaging really eco-friendly?
+          </span>
+
+          <svg class="w-6 h-6 accordion-icon transition-transform text-[var(--color-btn)]"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="p-4 pt-0 text-[var(--color-text-muted)]">
+            Yes! All our packaging is either 100% compostable or reusable. Our boxes are made from recycled
+                  materials, and we offer a return program where you can send back containers for credits on your next
+          </div>
+        </div>
+      </div>
+
+            <!-- Item 4-->
+      <div class="content-card rounded-lg bg-[var(--color-surface)]">
+        <button
+          class="accordion-header w-full flex items-center justify-between text-left p-4 rounded-lg transition hover:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-[var(--color-btn)]"
+        >
+          <span class="text-lg font-semibold">
+            Can I customize my box?
+          </span>
+
+          <svg class="w-6 h-6 accordion-icon transition-transform text-[var(--color-btn)]"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="p-4 pt-0 text-[var(--color-text-muted)]">
+            Absolutely! You can specify dietary preferences, exclude items you don't like, and add extras to your
+                  weekly delivery. Family and Premium members get full customization options.
+          </div>
+        </div>
+      </div>
+
+            <!-- Item 5-->
+      <div class="content-card rounded-lg bg-[var(--color-surface)]">
+        <button
+          class="accordion-header w-full flex items-center justify-between text-left p-4 rounded-lg transition hover:bg-[var(--color-surface)] focus:outline-none focus:ring-2 focus:ring-[var(--color-btn)]"
+        >
+          <span class="text-lg font-semibold">
+            What is your delivery area?
+          </span>
+
+          <svg class="w-6 h-6 accordion-icon transition-transform text-[var(--color-btn)]"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+          <div class="p-4 pt-0 text-[var(--color-text-muted)]">
+            We currently deliver to all major metropolitan areas and surrounding suburbs. Enter your zip code
+                  during signup to confirm delivery availability in your area. We're constantly expanding!
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
 
     <!-- CTA -->
-    <section class="py-20 bg-[var(--color-bg)]] text-[var(--color-text)]">
+    <section class="py-16 md:py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-5xl font-bold font-display mb-6">Join the Movement</h2>
-        <p class="text-2xl mb-8 max-w-3xl mx-auto opacity-90">
-          Be part of a community that's making a real difference for our planet.
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Join the Movement</h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+          Be part of a community making a real difference for our planet
         </p>
-        <a href="/subscribe"
-          class="btn bg-[var(--color-btn)] text-primary-600 hover:opacity-60 px-8 py-4 text-lg inline-flex items-center">
+        <a href="/subscribe" class="inline-flex items-center gap-2 bg-[var(--color-bg)]  text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-lg">
           Get Started Today
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
         </a>
@@ -347,75 +539,53 @@
     </section>
   </main>
 
-
-
-  <!-- ================= FOOTER SECTION ================= -->
-
-  <footer class="bg-[var(--color-bg)] text-[var(--color-text)] mt-16 shadow-lg">
-
-    <!-- MAIN FOOTER GRID -->
-    <div class="max-w-7xl mx-auto px-6 py-5
-           grid gap-5
-           grid-cols-1
-           md:grid-cols-2
-           lg:grid-cols-4
-           text-center md:text-left">
-
-      <!-- BRAND -->
+  <!-- Footer -->
+  <footer class="bg-[var(--color-nav)] text-[var(--color-text)] shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center md:text-left">
       <div class="flex flex-col items-center md:items-start">
         <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-12 mb-3">
         <h2 class="text-xl font-bold mb-3">Urban Harvest</h2>
         <p class="text-sm leading-relaxed max-w-xs">
-          Promoting sustainable urban living through eco-friendly products,
-          responsible sourcing, and community-driven initiatives.
+          Promoting sustainable urban living through eco-friendly products and community initiatives.
         </p>
       </div>
 
-      <!-- QUICK LINKS -->
       <div>
         <h3 class="font-semibold mb-4">Quick Links</h3>
-        <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <li><a href="/" class="hover:text-[var(--color-accent)]">Home</a></li>
-          <li><a href="/products" class="hover:text-[var(--color-accent)]">Products</a></li>
-          <li><a href="/community" class="hover:text-[var(--color-accent)]">Community</a></li>
-          <li><a href="/about" class="hover:text-[var(--color-accent)]">About</a></li>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/" class="hover:text-[var(--color-accent)] transition">Home</a></li>
+          <li><a href="/products" class="hover:text-[var(--color-accent)] transition">Products</a></li>
+          <li><a href="/community" class="hover:text-[var(--color-accent)] transition">Community</a></li>
+          <li><a href="/about" class="hover:text-[var(--color-accent)] transition">About</a></li>
         </ul>
       </div>
 
-      <!-- CONTACT -->
       <div>
         <h3 class="font-semibold mb-4">Contact</h3>
-        <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+        <ul class="space-y-2 text-sm">
           <li>hello@urbanharvest.com</li>
           <li>+94 76 512 12695</li>
           <li>Sri Lanka</li>
         </ul>
       </div>
 
-      <!-- SOCIAL -->
       <div>
         <h3 class="font-semibold mb-4">Follow Us</h3>
-        <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <a href="#" class="hover:text-[var(--color-accent)]">Facebook</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Instagram</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Twitter</a>
+        <div class="flex gap-4 justify-center md:justify-start text-sm">
+          <a href="#" class="hover:text-[var(--color-accent)] transition">Facebook</a>
+          <a href="#" class="hover:text-[var(--color-accent)] transition">Instagram</a>
+          <a href="#" class="hover:text-[var(--color-accent)] transition">Twitter</a>
         </div>
       </div>
-
     </div>
 
-    <!-- BOTTOM BAR -->
-    <div class="border-t border-[var(--color-btn)] text-center py-4 text-sm">
+    <div class="border-t border-gray-200 dark:border-gray-700 text-center py-4 text-sm">
       © 2026 Urban Harvest. All rights reserved.
     </div>
-
   </footer>
 
-
-
-<script type="module" src="./src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/js/about.js"></script>
 </body>
 
-
-
-</html>
+</html> 
