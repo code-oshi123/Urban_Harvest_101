@@ -12,7 +12,8 @@ export default defineConfig({
         main: 'index.html',
         about: 'about.html',
         subscribe: 'subscribe.html',
-        // products and community are served from /public as static assets
+        products: 'products.html',
+        community: 'community.html',
       },
     },
   },
