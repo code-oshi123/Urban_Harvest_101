@@ -130,12 +130,26 @@
     </div>
 
     <!-- Video -->
-    <div class="relative rounded-lg overflow-hidden shadow-lg">
+    <!-- <div class="relative rounded-lg overflow-hidden shadow-lg">
       <video class="w-full h-80 object-cover" controls preload="metadata" poster="/images/video-poster.jpg">
         <source src="/public/v_1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> -->
+
+    <!-- Video -->
+  <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+    <video
+      class="w-full h-full object-cover"
+      autoplay
+      loop
+      muted
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="/public/v_1.mp4" type="video/mp4" />
+    </video>
+  </div>
   </section>
 
   <section class="max-w-7xl mx-auto px-4 py-16" aria-labelledby="discover-heading">
