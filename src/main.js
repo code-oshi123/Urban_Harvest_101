@@ -88,6 +88,7 @@ if (slides.length && nextBtn && prevBtn) {
   }, 5000);
 }
 
-
-lucide.createIcons();
-
+// Initialize Lucide icons if the library is loaded
+if (typeof window !== "undefined" && window.lucide && typeof window.lucide.createIcons === "function") {
+  window.lucide.createIcons();
+}

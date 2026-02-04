@@ -3,126 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Harvest - Community</title>
-</head>
-
-<body class="bg-[var(--color-bg)] text-[var(--color-text)]">
-  <div id="app"></div>
-
-  <header class="bg-[var(--color-bg)]] text-[var(--color-text)] shadow-lg">
-    <nav class="nav-container" aria-label="Primary Navigation">
-
-      <div class="flex items-center gap-3">
-        <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
-        <span class="text-2xl font-bold text-[var(--color-text)]">
-          Urban Harvest
-        </span>
-      </div>
-
-      <ul class="hidden md:flex space-x-6 font-medium ">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about" class="nav-link">About</a></li>
-        <li><a href="/products" class="nav-link">Products</a></li>
-        <li><a href="/community" class="nav-link">Community</a></li>
-      </ul>
-
-      <div class="flex items-center space-x-3">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
-          <span id="theme-icon">🌙</span>
-        </button>
-        <button class="px-4 py-2 rounded bg-[var(--color-btn)] text-[var(--color-text)] hover:opacity-60 focus:ring-2">
-          <a href="/subscribe">Sign UP</a>
-        </button>
-        <button id="menu-btn" class="icon-btn md:hidden" aria-label="Toggle navigation menu" aria-expanded="false">
-          ☰
-        </button>
-      </div>
-    </nav>
-
-    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-bg)]">
-      <ul class="flex flex-col text-center py-4 space-y-4">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="/about" class="nav-link">About</a></li>
-        <li><a href="/products" class="nav-link">Products</a></li>
-        <li><a href="/community" class="nav-link">Community</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main class="pt-20">
-    <section class="py-16 max-w-7xl mx-auto px-4">
-      <h1 class="text-4xl font-bold mb-6">Our Community</h1>
-      <p class="text-lg mb-8">
-        Learn more about the Urban Harvest community, local events, and how we support sustainable living together.
-        This page is ready for you to expand with stories, events, and member highlights.
-      </p>
-    </section>
-  </main>
-
-  <footer class="bg-[var(--color-bg)] text-[var(--color-text)] mt-16 shadow-lg">
-    <div class="max-w-7xl mx-auto px-6 py-5
-           grid gap-5
-           grid-cols-1
-           md:grid-cols-2
-           lg:grid-cols-4
-           text-center md:text-left">
-
-      <div class="flex flex-col items-center md:items-start">
-        <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-12 mb-3">
-        <h2 class="text-xl font-bold mb-3">Urban Harvest</h2>
-        <p class="text-sm leading-relaxed max-w-xs">
-          Promoting sustainable urban living through eco-friendly products,
-          responsible sourcing, and community-driven initiatives.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold mb-4">Quick Links</h3>
-        <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <li><a href="/" class="hover:text-[var(--color-accent)]">Home</a></li>
-          <li><a href="/products" class="hover:text-[var(--color-accent)]">Products</a></li>
-          <li><a href="/community" class="hover:text-[var(--color-accent)]">Community</a></li>
-          <li><a href="/about" class="hover:text-[var(--color-accent)]">About</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="font-semibold mb-4">Contact</h3>
-        <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <li>hello@urbanharvest.com</li>
-          <li>+94 76 512 12695</li>
-          <li>Sri Lanka</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="font-semibold mb-4">Follow Us</h3>
-        <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <a href="#" class="hover:text-[var(--color-accent)]">Facebook</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Instagram</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Twitter</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="border-t border-[var(--color-btn)] text-center py-4 text-sm">
-      © 2026 Urban Harvest. All rights reserved.
-    </div>
-  </footer>
-
-  <script type="module" src="./src/main.js" defer></script>
-</body>
-
-</html>
-
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/public/Sub_Logo.png" />
+  <link rel="icon" type="image/svg+xml" href="/Sub_Logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://unpkg.com/lucide@latest"></script>
   <title>Urban Harvest-Community</title>
@@ -139,7 +20,7 @@
       <div class="flex items-center gap-3">
 
         <!-- LOGO IMAGE -->
-        <img src="../public/sub_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
+        <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
 
         <!-- LOGO TEXT (Brand Name) -->
         <span class="text-2xl font-bold text-[var(--color-text)]">
@@ -149,10 +30,10 @@
 
       <!-- Desktop Navigation -->
       <ul class="hidden md:flex space-x-6 font-medium ">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="products.html" class="nav-link">Products</a></li>
-        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/products" class="nav-link">Products</a></li>
+        <li><a href="/community" class="nav-link">Community</a></li>
 
       </ul>
 
@@ -167,7 +48,7 @@
 
         <!-- signin btn -->
         <button class="px-4 py-2 rounded bg-[var(--color-btn)] text-[var(--color-text)] hover:opacity-60 focus:ring-2">
-          <a href="./subscribe.html">Sign UP</a>
+          <a href="/subscribe">Sign UP</a>
         </button>
 
         <!-- Hamburger Menu -->
@@ -181,10 +62,10 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-bg)]">
       <ul class="flex flex-col text-center py-4 space-y-4">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="products.html" class="nav-link">Products</a></li>
-        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/products" class="nav-link">Products</a></li>
+        <li><a href="/community" class="nav-link">Community</a></li>
       </ul>
     </div>
   </header>
@@ -215,7 +96,7 @@
           <div class="grid md:grid-cols-2 gap-8">
             <div
               class="p-12 flex items-center justify-center">
-              <div><img src="/public/p_18.jpg" alt="water-wasting" class="w-full h-50 object-cover rounded-t-xl"></div>
+              <div><img src="/p_18.jpg" alt="water-wasting" class="w-full h-50 object-cover rounded-t-xl"></div>
             </div>
             <div class="p-8 flex flex-col justify-center">
               <span
@@ -245,7 +126,7 @@
           <div class="grid md:grid-cols-2 gap-8">
             <div
               class="p-12 flex items-center justify-center">
-              <div><img src="/public/p_23.jpg" alt="water-wasting" class="w-full h-50 object-cover rounded-t-xl"></div>
+              <div><img src="/p_23.jpg" alt="water-wasting" class="w-full h-50 object-cover rounded-t-xl"></div>
             </div>
             <div class="p-8 flex flex-col justify-center">
               <span
@@ -276,7 +157,7 @@
           <div class="grid md:grid-cols-2 gap-8">
             <div
               class="p-12 flex items-center justify-center">
-              <div><img src="/public/p_22.jpg" alt="water-wasting" class="w-full h-100 object-cover rounded-t-xl"></div>
+              <div><img src="/p_22.jpg" alt="water-wasting" class="w-full h-100 object-cover rounded-t-xl"></div>
             </div>
             <div class="p-8 flex flex-col justify-center">
               <span
@@ -308,7 +189,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_26.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_26.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs font-semibold mb-3">
@@ -328,7 +209,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_28.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_28.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-xs font-semibold mb-3">
@@ -348,7 +229,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_27.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_27.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-xs font-semibold mb-3">
@@ -368,7 +249,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_25.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_25.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-xs font-semibold mb-3">
@@ -388,7 +269,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_30.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_30.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 rounded-full text-xs font-semibold mb-3">
@@ -408,7 +289,7 @@
           <article class="card hover:scale-105 transition-all cursor-pointer">
             <div
               class="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg p-8 mb-4 text-center">
-              <div class="text-6xl"><img src="public/p_29.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
+              <div class="text-6xl"><img src="/p_29.jpg" alt="winter_edition" class="w-full h-48 object-cover rounded-t-xl"></div>
             </div>
             <span
               class="inline-block px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-xs font-semibold mb-3">
@@ -475,10 +356,10 @@
       <div>
         <h3 class="font-semibold mb-4">Quick Links</h3>
         <ul class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <li><a href="#" class="hover:text-[var(--color-accent)]">Home</a></li>
-          <li><a href="#" class="hover:text-[var(--color-accent)]">Products</a></li>
-          <li><a href="#" class="hover:text-[var(--color-accent)]">Community</a></li>
-          <li><a href="#" class="hover:text-[var(--color-accent)]">About</a></li>
+          <li><a href="/" class="hover:text-[var(--color-accent)]">Home</a></li>
+          <li><a href="/products" class="hover:text-[var(--color-accent)]">Products</a></li>
+          <li><a href="/community" class="hover:text-[var(--color-accent)]">Community</a></li>
+          <li><a href="/about" class="hover:text-[var(--color-accent)]">About</a></li>
         </ul>
       </div>
 
@@ -511,9 +392,6 @@
 
   </footer>
 
-
-
   <script type="module" src="/src/main.js"></script>
-  
 </body>
 </html>
