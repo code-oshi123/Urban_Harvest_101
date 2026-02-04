@@ -81,8 +81,7 @@
 
   /* ===== Product Components ===== */
   .product-card {
-    @apply bg-white
-           dark:bg-zinc-900
+    @apply bg-[var(--color-btn)]
            rounded-xl
            shadow
            overflow-hidden
