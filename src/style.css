@@ -15,12 +15,11 @@
 }
 
 .dark {
-  --color-bg: #0f172a;
-  --color-text: rgb(255, 253, 253);
-  --color-nav: #0f172a;
-  --color-btn: #16da58;
+  --color-bg: #020617;
+  --color-text: #ffffff;
+  --color-btn: #22c55e;
   --color-accent: #4ade80;
-} 
+}
 
 /* ===============================
    BASE STYLES
@@ -37,18 +36,27 @@
    CUSTOM COMPONENTS (@layer)
 ================================ */
 @layer components {
-
   .nav-link {
-    @apply hover:text-[var(--color-accent)]
-           focus:outline-none
-           focus:ring-2
-           focus:ring-[var(--color-accent)]
-           transition;
+    @apply 
+          px-3
+          py-2
+          inline-block
+          hover:text-[var(--color-accent)]
+          focus:outline-none
+          focus:ring-2
+          focus:ring-[var(--color-accent)]
+          transition;
   }
 
   /* ===== Navigation (YOUR EXISTING) ===== */
   .nav-container {
-    @apply max-w-7xl mx-auto px-4 py-4 flex items-center justify-between;
+    @apply 
+      max-w-7xl 
+      mx-auto 
+      px-4 
+      py-4 
+      flex items-center 
+      justify-between;
   }
 
   .nav-link {
@@ -70,6 +78,7 @@
   .btn-primary {
     @apply bg-[var(--color-btn)]
            text-white
+           min-h-[44px]
            px-5 py-2
            rounded-lg
            transition

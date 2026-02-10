@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Harvest-Home</title>
+  <title>Urban Harvest101-Home</title>
 </head>
 
 <body class="bg-[var(--color-bg)] text-[var(--color-text)]">
@@ -19,7 +18,7 @@
       <div class="flex items-center gap-3">
 
         <!-- LOGO IMAGE -->
-        <img src="/Main_Logo.png" alt="Urban Harvest Logo" class="h-10 w-auto" />
+        <img src="/Main_Logo.png" alt="Urban Harvest Logo" class="h-10 w-10" loading="lazy" />
 
         <!-- LOGO TEXT (Brand Name) -->
         <span class="text-2xl font-bold text-[var(--color-text)]">
@@ -68,146 +67,143 @@
     </div>
   </header>
 
+  <main>
 
-  <section class="max-w-7xl mx-auto px-4 py-16 grid gap-10 md:grid-cols-2 items-center">
+    <section class="max-w-7xl mx-auto px-4 py-16 grid gap-10 md:grid-cols-2 items-center">
 
-    <!-- Slideshow -->
-    <div class="relative overflow-hidden rounded-lg shadow-lg">
+      <!-- Slideshow -->
+      <div class="relative overflow-hidden rounded-lg shadow-lg">
 
-      <!-- Images -->
-      <img src="./public/p_1.jpg" alt="Urban farming with fresh vegetables" class="slide w-full h-80 object-cover"
-        loading="lazy" />
-      <img src="./public/p_2.jpg" alt="Sustainable packaging and eco products"
-        class="slide hidden w-full h-80 object-cover" loading="lazy" />
-      <img src="./public/p_3.jpg" alt="Community gardening initiative" class="slide hidden w-full h-80 object-cover"
-        loading="lazy" />
+        <!-- Images -->
+        <img src="./public/p_1.jpg" alt="Urban farming with fresh vegetables" class="slide w-full h-80 object-cover"
+          loading="lazy" />
+        <img src="./public/p_2.jpg" alt="Sustainable packaging and eco products"
+          class="slide hidden w-full h-80 object-cover" loading="lazy" />
+        <img src="./public/p_3.jpg" alt="Community gardening initiative" class="slide hidden w-full h-80 object-cover"
+          loading="lazy" />
 
-      <!-- Controls -->
-      <button id="prevSlide" aria-label="Previous slide"
-        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded focus:ring-2">
-        ‹
-      </button>
+        <!-- Controls -->
+        <button id="prevSlide" aria-label="Previous slide"
+          class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded focus:ring-2">
+          ‹
+        </button>
 
-      <button id="nextSlide" aria-label="Next slide"
-        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded focus:ring-2">
-        ›
-      </button>
+        <button id="nextSlide" aria-label="Next slide"
+          class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded focus:ring-2">
+          ›
+        </button>
 
-    </div>
+      </div>
 
-    <!-- Mission Statement -->
-    <div>
-      <h1 class="text-3xl font-bold mb-4">
-        Growing a Sustainable Urban Future
-      </h1>
-      <p class="text-lg leading-relaxed">
-        Urban Harvest is committed to promoting sustainable urban living by
-        providing eco-friendly products, supporting responsible sourcing,
-        and empowering communities to adopt environmentally conscious
-        practices that benefit both people and the planet.
-      </p>
-    </div>
+      <!-- Mission Statement -->
+      <div>
+        <h1 class="text-3xl font-bold mb-4">
+          Growing a Sustainable Urban Future
+        </h1>
+        <p class="text-lg leading-relaxed">
+          Urban Harvest is committed to promoting sustainable urban living by
+          providing eco-friendly products, supporting responsible sourcing,
+          and empowering communities to adopt environmentally conscious
+          practices that benefit both people and the planet.
+        </p>
+      </div>
 
-  </section>
+    </section>
 
-  <section class="max-w-7xl mx-auto px-4 py-20 grid gap-10 md:grid-cols-2 items-center" aria-labelledby="value-heading">
-    <!-- Value Statement -->
-    <div>
-      <h2 id="value-heading" class="text-3xl font-bold mb-4">
-        Our Values Drive Every Harvest
+    <section class="max-w-7xl mx-auto px-4 py-20 grid gap-10 md:grid-cols-2 items-center"
+      aria-labelledby="value-heading">
+      <!-- Value Statement -->
+      <div>
+        <h2 id="value-heading" class="text-3xl font-bold mb-4">
+          Our Values Drive Every Harvest
+        </h2>
+
+        <p class="text-lg leading-relaxed mb-4">
+          At Urban Harvest, sustainability is more than a goal—it is a commitment.
+          We believe in ethical sourcing, reducing environmental impact, and
+          empowering communities to build greener urban lifestyles.
+        </p>
+
+        <p class="text-lg leading-relaxed">
+          Every product and initiative reflects our dedication to transparency,
+          responsibility, and long-term environmental well-being.
+        </p>
+      </div>
+
+
+      <!-- Video -->
+      <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+        <video class="w-full h-full object-cover" autoplay loop muted playsinline aria-hidden="true">
+          <source src="/public/v_1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16" aria-labelledby="discover-heading">
+      <!-- Section Heading -->
+      <h2 id="discover-heading" class="text-3xl font-bold text-center mb-12">
+        Discover Urban Harvest
       </h2>
 
-      <p class="text-lg leading-relaxed mb-4">
-        At Urban Harvest, sustainability is more than a goal—it is a commitment.
-        We believe in ethical sourcing, reducing environmental impact, and
-        empowering communities to build greener urban lifestyles.
-      </p>
+      <!-- Cards Grid -->
+      <div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-3 ">
 
-      <p class="text-lg leading-relaxed">
-        Every product and initiative reflects our dedication to transparency,
-        responsibility, and long-term environmental well-being.
-      </p>
-    </div>
+        <!-- Card 1 -->
+        <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
+          <img src="./public/p_5.jpg" alt="Traditional cultural celebration" class="w-full h-56 object-cover"
+            loading="lazy" />
 
+          <div class="p-6 text-center">
+            <p class="text-[var(--color-text)] text-lg font-medium mb-4">
+              About Us
+            </p>
 
-    <!-- Video -->
-  <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
-    <video
-      class="w-full h-full object-cover"
-      autoplay
-      loop
-      muted
-      playsinline
-      aria-hidden="true"
-    >
-      <source src="/public/v_1.mp4" type="video/mp4" />
-    </video>
-  </div>
-  </section>
+            <a href="/about"
+              class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text)] hover:opacity-50 focus:ring-2">
+              Explore
+            </a>
+          </div>
+        </article>
 
-  <section class="max-w-7xl mx-auto px-4 py-16" aria-labelledby="discover-heading">
-    <!-- Section Heading -->
-    <h2 id="discover-heading" class="text-3xl font-bold text-center mb-12">
-      Discover Urban Harvest
-    </h2>
+        <!-- Card 2 -->
+        <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
+          <img src="./public/p_4.jpg" alt="People performing cultural dance" class="w-full h-56 object-cover"
+            loading="lazy" />
 
-    <!-- Cards Grid -->
-    <div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-3 ">
+          <div class="p-6 text-center">
+            <p class="text-lg font-medium mb-4">
+              Our Community
+            </p>
 
-      <!-- Card 1 -->
-      <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
-        <img src="./public/p_5.jpg" alt="Traditional cultural celebration" class="w-full h-56 object-cover"
-          loading="lazy" />
+            <a href="/community"
+              class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text) hover:opacity-50 focus:ring-2">
+              Join
+            </a>
+          </div>
+        </article>
 
-        <div class="p-6 text-center">
-          <p class="text-[var(--color-text)] text-lg font-medium mb-4">
-            About Us
-          </p>
+        <!-- Card 3 -->
 
-          <a href="/about"
-            class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text)] hover:opacity-50 focus:ring-2">
-            Explore
-          </a>
-        </div>
-      </article>
+        <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
+          <img src="./public/p_6.jpg" alt="Historic Asian street scene" class="w-full h-56 object-cover"
+            loading="lazy" />
 
-      <!-- Card 2 -->
-      <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
-        <img src="./public/p_4.jpg" alt="People performing cultural dance" class="w-full h-56 object-cover"
-          loading="lazy" />
+          <div class="p-6 text-center">
+            <p class="text-lg font-medium mb-4">
+              Discover Products
+            </p>
 
-        <div class="p-6 text-center">
-          <p class="text-lg font-medium mb-4">
-            Our Community
-          </p>
+            <a href="/products"
+              class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text) hover:opacity-50 focus:ring-2">
+              Discover
+            </a>
+          </div>
+        </article>
 
-          <a href="/community"
-            class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text) hover:opacity-50 focus:ring-2">
-            Join
-          </a>
-        </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Card 3 -->
-
-      <article class="rounded-lg overflow-hidden shadow-lg bg-[var(--color-bg)]">
-        <img src="./public/p_6.jpg" alt="Historic Asian street scene" class="w-full h-56 object-cover" loading="lazy" />
-
-        <div class="p-6 text-center">
-          <p class="text-lg font-medium mb-4">
-            Discover Products
-          </p>
-
-          <a href="/products"
-            class="inline-block px-6 py-2 rounded bg-[var(--color-accent)] text-[var(--color-text) hover:opacity-50 focus:ring-2">
-            Discover
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
+  </main>
 
 
   <!-- ================= FOOTER SECTION ================= -->
@@ -224,7 +220,7 @@
 
       <!-- BRAND -->
       <div class="flex flex-col items-center md:items-start">
-        <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-12 mb-3">
+        <img src="/Sub_Logo.png" alt="Urban Harvest Logo" class="h-12 w-10 mb-3" loading="lazy">
         <h2 class="text-xl font-bold mb-3">Urban Harvest</h2>
         <p class="text-sm leading-relaxed max-w-xs">
           Promoting sustainable urban living through eco-friendly products,
@@ -257,9 +253,9 @@
       <div>
         <h3 class="font-semibold mb-4">Follow Us</h3>
         <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <a href="#" class="hover:text-[var(--color-accent)]">Facebook</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Instagram</a>
-          <a href="#" class="hover:text-[var(--color-accent)]">Twitter</a>
+          <a href="https://web.facebook.com/" class="hover:text-[var(--color-accent)]">Facebook</a>
+          <a href="https://www.instagram.com/" class="hover:text-[var(--color-accent)]">Instagram</a>
+          <a href="https://x.com/" class="hover:text-[var(--color-accent)]">Twitter</a>
         </div>
       </div>
 
