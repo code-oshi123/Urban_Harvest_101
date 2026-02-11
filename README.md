@@ -2,9 +2,8 @@
 
 A professional, fully responsive multi-page web application promoting sustainable living through fresh, organic produce delivery. Built with HTML, Tailwind CSS, and Vite.
 
-![Urban Harvest](https://img.shields.io/badge/Version-1.0.0-green) ![Lighthouse](https://img.shields.io/badge/Accessibility-95+-brightgreen) ![Performance](https://img.shields.io/badge/Performance-90+-blue)
-
-## 📋 Table of Contents
+![Urban Harvest](https://urban-harvest-101.vercel.app/) ![Lighthouse](image-1.png) 
+## Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -16,7 +15,7 @@ A professional, fully responsive multi-page web application promoting sustainabl
 - [Performance](#performance)
 - [Credits](#credits)
 
-## ✨ Features
+## Features
 
 ### Pages (6 Total)
 1. **Home** - Mission, values, features, testimonial carousel
@@ -27,34 +26,34 @@ A professional, fully responsive multi-page web application promoting sustainabl
 6. **404** - Custom error page
 
 ### Interactive Components
-- ✅ **Carousel** - Auto-playing testimonials with keyboard/touch support
-- ✅ **Accordion** - Animated FAQ section
-- ✅ **Modal** - Product details popup
-- ✅ **Mobile Navigation** - Hamburger menu with overlay
-- ✅ **Form Validation** - Real-time validation with success/error states
+-  **Carousel** - Auto-playing testimonials with keyboard/touch support
+-  **Accordion** - Animated FAQ section
+-  **Modal** - Product details popup
+-  **Mobile Navigation** - Hamburger menu with overlay
+-  **Form Validation** - Real-time validation with success/error states
 
 ### Tailwind Customization
-- ✅ Light/Dark mode with CSS variables
-- ✅ Extended theme configuration
-- ✅ 10+ custom components via `@layer`
-- ✅ Custom animations and utilities
-- ✅ Responsive design system
+-  Light/Dark mode with CSS variables
+-  Extended theme configuration
+-  10+ custom components via `@layer`
+-  Custom animations and utilities
+-  Responsive design system
 
 ### Accessibility Features
-- ✅ Semantic HTML5 elements
-- ✅ ARIA labels and roles
-- ✅ Keyboard navigation support
-- ✅ Screen reader friendly
-- ✅ Focus visible states
-- ✅ Alt text for all images
-- ✅ Form validation announcements
+-  Semantic HTML5 elements
+-  ARIA labels and roles
+-  Keyboard navigation support
+-  Screen reader friendly
+-  Focus visible states
+-  Alt text for all images
+-  Form validation announcements
 
 ### Performance Optimizations
-- ✅ Lazy loading images
-- ✅ Optimized CSS bundle
-- ✅ Minimal JavaScript
-- ✅ Efficient animations
-- ✅ Preload critical assets
+-  Lazy loading images
+-  Optimized CSS bundle
+-  Minimal JavaScript
+-  Efficient animations
+-  Preload critical assets
 
 ## 🛠 Tech Stack
 
@@ -65,7 +64,7 @@ A professional, fully responsive multi-page web application promoting sustainabl
 - **Icons**: SVG icons, Emoji
 - **Deployment**: GitHub Pages
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 urban-harvest/
@@ -97,7 +96,7 @@ urban-harvest/
 └── dist/                      # Build output (generated)
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -150,16 +149,16 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/urban-harvest/',  // Replace with your repo name
+  base: '/urban-harvest/',  Urban-Harvst-101
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        products: resolve(__dirname, 'products.html'),
-        subscribe: resolve(__dirname, 'subscribe.html'),
-        community: resolve(__dirname, 'community.html'),
-        about: resolve(__dirname, 'about.html'),
-        404: resolve(__dirname, '404.html'),
+        main: resolve(/, 'index.html'),
+        products: resolve(/, 'products.html'),
+        subscribe: resolve(/, 'subscribe.html'),
+        community: resolve(/, 'community.html'),
+        about: resolve(/, 'about.html'),
+        404: resolve(/, '404.html'),
       },
     },
   },
@@ -177,10 +176,183 @@ export default {
 ```
 
 5. **Copy all files from artifacts into your project**
-   - Copy `tailwind.config.js`
-   - Copy `src/css/style.css`
-   - Copy all HTML files
-   - Copy all JavaScript files
+   - `tailwind.config.js`
+            export default {
+            darkMode: "class",
+            content: ["./*.html", "./src/**/*.{js,css}"],
+            theme: {
+              extend: {
+                colors: {
+                  brand: {
+                    light: "#fdfcf8",
+                    dark: "#0f172a",
+                  },
+                },
+              },
+            },
+            plugins: [],
+          };
+
+   - `src/css/style.css`
+              @import "tailwindcss";
+              @tailwind base;
+              @tailwind components;
+              @tailwind utilities;
+
+              /* ===============================
+                CSS VARIABLES (Light / Dark)
+              ================================ */
+              :root {
+                --color-bg: #fdfcf8;
+                --color-text: #1f2937;
+                --color-nav: #ffffff;
+                --color-btn: #16a34a;
+                --color-accent: #22c55e;
+              }
+
+              .dark {
+                --color-bg: #020617;
+                --color-text: #ffffff;
+                --color-nav:#020617;
+                --color-btn: #22c55e;
+                --color-accent: #4ade80;
+              }
+
+              /* ===============================
+                BASE STYLES
+              ================================ */
+              @layer base {
+                body {
+                  background-color: var(--color-bg);
+                  color: var(--color-text);
+                }
+              }
+
+
+              /* ===============================
+                CUSTOM COMPONENTS (@layer)
+              ================================ */
+              @layer components {
+                .nav-link {
+                  @apply 
+                        px-3
+                        py-2
+                        inline-block
+                        hover:text-[var(--color-accent)]
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)]
+                        transition;
+                }
+
+                /* ===== Navigation (YOUR EXISTING) ===== */
+                .nav-container {
+                  @apply 
+                    max-w-7xl 
+                    mx-auto 
+                    px-4 
+                    py-4 
+                    flex items-center 
+                    justify-between;
+                }
+
+                .nav-link {
+                  @apply hover:text-[var(--color-btn)]
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)]
+                        transition;
+                }
+
+                .icon-btn {
+                  @apply p-2 rounded
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)];
+                }
+
+                /* ===== Buttons ===== */
+                .btn-primary {
+                  @apply bg-[var(--color-btn)]
+                        text-white
+                        min-h-[44px]
+                        px-5 py-2
+                        rounded-lg
+                        transition
+                        hover:opacity-90
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)];
+                }
+
+                /* ===== Product Components ===== */
+                .product-card {
+                  @apply bg-[var(--color-bg)]
+                        rounded-xl
+                        shadow
+                        overflow-hidden
+                        transition
+                        hover:shadow-lg
+                        hover:scale-[1.02];
+                }
+
+                .eco-badge {
+                  @apply inline-block
+                        text-xs
+                        px-2 py-1
+                        rounded-full
+                        bg-[var(--color-btn)]
+                        text-white;
+                }
+
+                /* ===== Tabs ===== */
+                .tab-btn {
+                  @apply px-4 py-2
+                        rounded-lg
+                        border
+                        border-[var(--color-btn)]
+                        transition
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)]
+                        aria-selected:bg-[var(--color-btn)]
+                        aria-selected:text-white;
+                }
+
+                /* ===== Forms ===== */
+                .form-input {
+                  @apply w-full
+                        p-2
+                        rounded-md
+                        border
+                        border-gray-300
+                        dark:border-zinc-700
+                        bg-white
+                        dark:bg-zinc-900
+                        focus:outline-none
+                        focus:ring-2
+                        focus:ring-[var(--color-accent)];
+                }
+
+                .form-error {
+                  @apply text-sm text-red-600 mt-1;
+                }
+
+                .form-success {
+                  @apply text-sm text-green-600 mt-1;
+                }
+
+                /* ===== Cards / Sections ===== */
+                .content-card {
+                  @apply bg-[var(--color-bg)]
+                        rounded-xl
+                        p-6
+                        shadow;
+                }
+              }
+
+   - all HTML files - 5
+   - all JavaScript files - 8
 
 6. **Create .gitignore**
 ```
@@ -190,13 +362,13 @@ dist
 *.log
 ```
 
-## 💻 Development
+##  Development
 
 ### Run Development Server
 ```bash
 npm run dev
 ```
-Access at `http://localhost:5173`
+Access at `http://localhost:4173/`
 
 ### Build for Production
 ```bash
@@ -216,7 +388,7 @@ npm run preview
 - **Dark Mode Testing**: Toggle theme button or use browser DevTools
 - **Responsive Testing**: Use browser DevTools device toolbar
 
-## 🚀 Deployment to GitHub Pages
+##  Deployment to GitHub Pages
 
 ### Option 1: Automated Deployment
 
@@ -293,21 +465,21 @@ jobs:
         publish_dir: ./dist
 ```
 
-## ♿ Accessibility
+##  Accessibility
 
 This project achieves **Lighthouse Accessibility Score: 95+**
 
 ### Features Implemented:
-- ✅ Semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
-- ✅ ARIA labels and roles
-- ✅ Keyboard navigation (Tab, Enter, Escape, Arrow keys)
-- ✅ Focus management and visible focus states
-- ✅ Screen reader announcements
-- ✅ Form labels and error descriptions
-- ✅ Skip to main content link
-- ✅ Contrast ratios meet WCAG AA standards
-- ✅ Responsive text sizing
-- ✅ Alt text for images
+-  Semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<article>`, `<footer>`)
+-  ARIA labels and roles
+-  Keyboard navigation (Tab, Enter, Escape, Arrow keys)
+-  Focus management and visible focus states
+-  Screen reader announcements
+-  Form labels and error descriptions
+-  Skip to main content link
+-  Contrast ratios meet WCAG AA standards
+-  Responsive text sizing
+-  Alt text for images
 
 ### Testing:
 ```bash
@@ -316,18 +488,18 @@ npm run preview
 # Then in Chrome DevTools: Lighthouse tab → Run audit
 ```
 
-## ⚡ Performance
+##  Performance
 
 **Lighthouse Performance Score: 90+**
 
 ### Optimizations:
-- ✅ Lazy loading images
-- ✅ Minified CSS and JS
-- ✅ Optimized font loading
-- ✅ Efficient animations (GPU-accelerated)
-- ✅ Code splitting
-- ✅ Tree shaking (Vite)
-- ✅ Compressed assets
+- Lazy loading images
+- Minified CSS and JS
+- Optimized font loading
+- Efficient animations (GPU-accelerated)
+- Code splitting
+- Tree shaking (Vite)
+- Compressed assets
 
 ### Image Optimization Tips:
 ```bash
@@ -338,48 +510,40 @@ npm run preview
 # - Implement srcset for responsive images
 ```
 
-## 📊 Lighthouse Audit
+##  Lighthouse Audit
 
 To verify performance and accessibility:
 
 1. Build the project: `npm run build`
 2. Preview: `npm run preview`
-3. Open Chrome DevTools (F12)
-4. Go to Lighthouse tab
-5. Select categories: Performance, Accessibility, Best Practices, SEO
-6. Click "Analyze page load"
-7. Screenshot results for assignment submission
+3. Lighthouse Test Result
+    ![lighthouse Test](image.png)
 
-Expected Scores:
-- Performance: 90+
-- Accessibility: 95+
-- Best Practices: 95+
-- SEO: 95+
 
-## 🎨 Customization Guide
+##  Customization Guide
 
 ### Colors
 Edit `tailwind.config.js` and `src/css/style.css` CSS variables:
 
 ```css
 :root {
-  --color-primary-600: #16a34a;  /* Main green */
-  --color-secondary-500: #eab308; /* Accent yellow */
+  --color-bg: #fdfcf8;
+  --color-text: #1f2937;
+  --color-nav: #ffffff;
+  --color-btn: #16a34a;
+  --color-accent: #22c55e;
+}
+
+.dark {
+  --color-bg: #020617;
+  --color-text: #ffffff;
+  --color-nav:#020617;
+  --color-btn: #22c55e;
+  --color-accent: #4ade80;
 }
 ```
 
-### Fonts
-In `src/css/style.css`:
-```css
-@import url('https://fonts.googleapis.com/css2?family=Your+Font&display=swap');
-```
-
-### Content
-- Update text in HTML files
-- Replace placeholder images in `src/images/`
-- Modify product/service data
-
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues:
 
@@ -406,31 +570,31 @@ npm install
 npm run build
 ```
 
-## 📝 Assignment Checklist
+##  Assignment Checklist
 
-- ✅ 5+ pages (6 total including 404)
-- ✅ Vite + Tailwind CSS setup
-- ✅ Light/Dark mode with CSS variables
-- ✅ 3+ custom `@layer` components (10+ implemented)
-- ✅ Extended `tailwind.config.js` theme
-- ✅ 2+ interactive components (4 implemented)
-- ✅ Form validation with success/error states
-- ✅ Semantic HTML5 + ARIA
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Optimized images with lazy loading
-- ✅ Lighthouse: Accessibility ≥90, Performance ≥85
-- ✅ Deployed to GitHub Pages
-- ✅ Professional README with instructions
+- 5+ pages (6 total including 404)
+- Vite + Tailwind CSS setup
+- Light/Dark mode with CSS variables
+- 3+ custom `@layer` components (10+ implemented)
+- Extended `tailwind.config.js` theme
+- interactive components (10 implemented)
+- Form validation with success/error states
+- Semantic HTML5 + ARIA
+- Fully responsive (mobile, tablet, desktop)
+- Optimized images with lazy loading
+- Lighthouse: Accessibility ≥90, Performance ≥85
+- Deployed to GitHub Pages
+- Professional README with instructions
 
-## 👨‍💻 Credits
+##  Credits
 
-**Developer**: [Your Name]
-**Institution**: [Your University]
+**Developer**: CB014599 - Ushani Perera
+**Institution**: Apiit 
 **Course**: Web Development
 **Assignment**: Task 2 - Urban Harvest Project
-**Date**: January 2026
+**Date**: Feb 2026
 
-## 📄 License
+##  License
 
 This project is created for educational purposes.
 
@@ -438,4 +602,4 @@ This project is created for educational purposes.
 
 **Built with 💚 for the planet**
 
-For questions or issues, please contact: [your.email@example.com]
+For questions or issues, please contact: CB014599 - Ushani Perera
