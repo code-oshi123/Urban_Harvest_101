@@ -2,7 +2,8 @@
 
 A professional, fully responsive multi-page web application promoting sustainable living through fresh, organic produce delivery. Built with HTML, Tailwind CSS, and Vite.
 
-![Urban Havest](https://urban-harvest-101.vercel.app/)
+![Urban Harvest](https://urban-harvest-101.vercel.app/)
+https://urban-harvest-101.vercel.app/
  ![Lighthouse](image-1.png) 
 ## Table of Contents
 
