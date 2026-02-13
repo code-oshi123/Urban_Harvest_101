@@ -14,6 +14,7 @@ export default defineConfig({
         subscribe: 'subscribe.html',
         products: 'products.html',
         community: 'community.html',
+        404: '404.html',
       },
     },
   },
